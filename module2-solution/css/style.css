@@ -1,1 +1,87 @@
+* {
+	box-sizing: border-box;
+}
 
+h1{
+	text-align: center;
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column {
+	position: relative;
+	height: 100px:;
+	padding: 29px;
+	border: 1px solid black;
+	margin: auto;
+	background-color: gray;
+
+}
+
+h2{
+	position: absolute;
+	padding: 5px;
+	border: 1px solid black;
+	top: -21px;
+	right: -1px;
+	text-align: center;
+}
+
+#id1 {
+	background-color: #ff8080;
+}
+#id2 {
+	background-color: red;
+	color:white;
+}
+#id3 {
+	background-color: #ffff80;
+}
+
+/* Simple Responsive Framework. */
+.row {
+	width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 991px) {
+	.column {
+		width: 32%;
+		float: left;
+	}
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+	.column{
+		width: 45%;
+		margin-bottom: 5%;
+
+	}
+	.column3{
+		width: 95%;
+	}
+	div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	.column {
+		width: 90%;
+		margin-bottom: 5%;
+	}
+	div{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+}
