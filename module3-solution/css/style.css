@@ -1,1 +1,15 @@
 
+#header-nav {
+  background-color: #000000;
+  border-radius: 0;
+  border: 0;
+}
+
+p{
+	font-size: 200%;
+}
+
+.row{
+	background-color: grey;
+	margin: 15px;
+}
